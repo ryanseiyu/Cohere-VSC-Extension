@@ -34,7 +34,7 @@ function activate(context) {
 
 	context.subscriptions.push(
 		vscode.commands.registerCommand("cohere.openWebview", function () {
-			const panel = vscode.window.createWebviewPanel(
+			vscode.window.createWebviewPanel(
 				"cohereWebview",
 				"Cohere Webview",
 				vscode.ViewColumn.One,
@@ -43,7 +43,7 @@ function activate(context) {
 				}
 			);
 
-			panel.webview.html = getWebviewContent();
+			// panel.webview.html = getWebviewContent();
 		})
 	);
 
@@ -53,20 +53,20 @@ function activate(context) {
 	let disposable = vscode.commands.registerCommand(
 		"rk.helloWorld",
 		function () {
-			context.subscriptions.push(
-				vscode.commands.registerCommand("Cohere", function () {
-					const panel = vscode.window.createWebviewPanel(
-						"Cohere",
-						"Cohere Chat View",
-						vscode.ViewColumn.One,
-						{
-							enableScripts: true, // Enables JavaScript in the webview
-						}
-					);
+			// context.subscriptions.push(
+			// 	vscode.commands.registerCommand("Cohere", function () {
+			// 		const panel = vscode.window.createWebviewPanel(
+			// 			"Cohere",
+			// 			"Cohere Chat View",
+			// 			vscode.ViewColumn.One,
+			// 			{
+			// 				enableScripts: true, // Enables JavaScript in the webview
+			// 			}
+			// 		);
 
-					panel.webview.html = getWebviewContent();
-				})
-			);
+			// 		panel.webview.html = getWebviewContent();
+			// 	})
+			// );
 
 			let message = "What year was he born?"; // Replace this with the actual message you want to send
 
@@ -87,20 +87,20 @@ function activate(context) {
 	context.subscriptions.push(disposable);
 }
 
-function getWebviewContent() {
-	return `
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Cohere Chat Sidebar</title>
-        </head>
-        <body>
-            <h1>Welcome to My Extension Sidebar!</h1>
-        </body>
-        </html>`;
-}
+// function getWebviewContent() {
+// 	return `
+//         <!DOCTYPE html>
+//         <html lang="en">
+//         <head>
+//             <meta charset="UTF-8">
+//             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//             <title>Cohere Chat Sidebar</title>
+//         </head>
+//         <body>
+//             <h1>Welcome to My Extension Sidebar!</h1>
+//         </body>
+//         </html>`;
+// }
 
 exports.activate = activate;
 

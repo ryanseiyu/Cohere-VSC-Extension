@@ -16,7 +16,8 @@ For example if there is an image subfolder under your extension project workspac
 
 pip install flask
 pip install cohere
-nmm install axios
+npm install
+npm install axios
 
 ## Extension Settings
 

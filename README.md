@@ -14,10 +14,10 @@ For example if there is an image subfolder under your extension project workspac
 
 ## Requirements
 
-pip install flask
-pip install cohere
-npm install
-npm install axios
+pip install flask <br>
+pip install cohere <br>
+npm install <br>
+npm install axios <br>
 
 ## Extension Settings
 

@@ -12,14 +12,28 @@ For example if there is an image subfolder under your extension project workspac
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
+## How to open
+
+First you need to go to the proper folder, so make sure your VSC is at the 'rk' folder.
+
+On Visual Studio Code press F5 and select Extension Development Host. You will see the extension on the Activity Bar named Cohere Chat. The Activity Bar has icons of the Explorer, Search, Source Control and so on.
+
 ## Requirements
+
+### Python Dependencies
 
 pip install flask <br>
 pip install cohere <br>
+
+### NPM Dependencies
+
 npm install <br>
 npm install axios <br>
 
-Create .env file and write your API inside the file just like this: API_KEY=2q723221adad1223g6Ytcedfgh2341...
+### API key
+
+Sign up at Cohere to get your free Trial Key.
+Create a .env file and write your API inside the file just like this: API_KEY=2q723221adad1223g6Ytcedfgh2341
 
 ## Extension Settings
 

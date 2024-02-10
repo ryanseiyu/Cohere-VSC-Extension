@@ -19,6 +19,8 @@ pip install cohere <br>
 npm install <br>
 npm install axios <br>
 
+Create .env file and write your API inside the file just like this: API_KEY=2q723221adad1223g6Ytcedfgh2341...
+
 ## Extension Settings
 
 Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.

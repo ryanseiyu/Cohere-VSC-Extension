@@ -14,8 +14,23 @@
 
 from flask import Flask, request, jsonify
 import cohere
+import os
 
 app = Flask(__name__)
+
+# Reading the .env file to retrieve the API key
+def load_env():
+    with open('.env', 'r') as f:
+        for line in f:
+            if line.strip():
+                key, value = line.strip().split('=', 1)
+                os.environ[key] = value
+
+# Load the environment variables
+load_env()
+
+# Getting the API key from the environment
+api_key = os.getenv('API_KEY')
 
 @app.route('/cohere', methods=['POST'])
 def cohere_chat():
@@ -23,7 +38,7 @@ def cohere_chat():
     data = request.get_json()
     
     # Create a Cohere client.
-    co = cohere.Client('Pxv343hL1UC3IrmqmAwS7e5qRCpc9Dg4duIzckcj')
+    co = cohere.Client(api_key)
 
     # Send a chat request to the Cohere API.
     response = co.chat(

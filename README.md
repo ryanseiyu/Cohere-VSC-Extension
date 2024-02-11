@@ -12,12 +12,6 @@ Press CTRL+SHIFT+P and type Hello World and then type what you want for the LLM.
 
 ![Preview](images/cohereExtensionPreview.gif)
 
-## How to open
-
-First you need to go to the proper folder, so make sure your VSC is at the correct folder.
-
-On Visual Studio Code press F5 and select Extension Development Host. You will see the extension on the Activity Bar named Cohere Chat. The Activity Bar has icons of the Explorer, Search, Source Control and so on.
-
 ## Requirements
 
 ### API key

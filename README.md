@@ -8,7 +8,7 @@ Sign up at Cohere to get your free Trial Key.<br>
 Create a .env file and write your API inside the file just like this:<br> API_KEY=2q723221adad1223g6Ytcedfgh2341<br>
 Run the service_api.py script. It will keep running as an API.<br>
 Press F5 to activate the extension environment, it will open a new VSC window.<br>
-Press CTRL+SHIFT+P and type Hello World and then type what you want for the LLM.<br>
+Press CTRL+SHIFT+P and type Hello World, select it and then type what you want for the LLM.<br>
 
 ![Preview](images/cohereExtensionPreview.gif)
 

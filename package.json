@@ -1,8 +1,7 @@
 {
-  "name": "rk",
-  "displayName": "cohere extension",
-  "description": "Cohere Visual Studio Code extension for it's Cohere's Chat.",
-  "icon": "images/icon.png",
+  "name": "cohere",
+  "displayName": "cohere",
+  "description": "Cohere Chat Extension with Typescript and Python",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.86.0"
@@ -11,41 +10,46 @@
     "Other"
   ],
   "activationEvents": [],
-  "main": "./extension.js",
+  "main": "./out/extension.js",
   "contributes": {
     "viewsContainers": {
       "activitybar": [
-          {
-              "id": "Cohere",
-              "title": "Cohere Chat",
-              "icon": "images/icon.png"
-          }
-      ]
-  },
-  "views": {
-    "Cohere": [
         {
-            "id": "Cohere",
-            "name": "Cohere Chat"
+          "id": "Cohere",
+          "title": "Cohere Chat",
+          "icon": "images/icon.png"
         }
-    ]
-},
+      ]
+    },
+    "views": {
+      "Cohere": [
+        {
+          "id": "Cohere",
+          "name": "Cohere Chat"
+        }
+      ]
+    },
     "commands": [
       {
-        "command": "rk.helloWorld",
+        "command": "cohere.helloWorld",
         "title": "Hello World"
       }
     ]
   },
   "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
     "test": "vscode-test"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
     "@types/vscode": "^1.86.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
     "@vscode/test-cli": "^0.0.4",
     "@vscode/test-electron": "^2.3.9",
     "eslint": "^8.56.0",

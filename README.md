@@ -29,6 +29,7 @@ pip install cohere <br>
 
 npm install <br>
 npm install axios <br>
+npm install --save @vscode/webview-ui-toolkit
 
 ### API key
 

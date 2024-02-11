@@ -4,21 +4,26 @@ This is the README for my extension Cohere Chat.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Sign up at Cohere to get your free Trial Key.
+Create a .env file and write your API inside the file just like this: API_KEY=2q723221adad1223g6Ytcedfgh2341
+Run the service_api.py script. It will keep running as an API.
+Press F5 to activate the extension environment, it will open a new VSC window.
+Press CTRL+SHIFT+P and type Hello World and then type what you want for the LLM.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![Preview](images/cohereExtensionPreview.gif)
 
 ## How to open
 
-First you need to go to the proper folder, so make sure your VSC is at the 'rk' folder.
+First you need to go to the proper folder, so make sure your VSC is at the correct folder.
 
 On Visual Studio Code press F5 and select Extension Development Host. You will see the extension on the Activity Bar named Cohere Chat. The Activity Bar has icons of the Explorer, Search, Source Control and so on.
 
 ## Requirements
+
+### API key
+
+Sign up at Cohere to get your free Trial Key.
+Create a .env file and write your API inside the file just like this: API_KEY=2q723221adad1223g6Ytcedfgh2341
 
 ### Python Dependencies
 
@@ -30,56 +35,5 @@ pip install cohere <br>
 npm install <br>
 npm install axios <br>
 npm install --save @vscode/webview-ui-toolkit
-
-### API key
-
-Sign up at Cohere to get your free Trial Key.
-Create a .env file and write your API inside the file just like this: API_KEY=2q723221adad1223g6Ytcedfgh2341
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-- `myExtension.enable`: Enable/disable this extension.
-- `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
